@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://movie-search.com/content.json",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "Id of movie in local database"
+        },
+        "year": {
+            "type": "array",
+            "description": "Year in which launch",
+            "items": {
+                "type": "string"
+            },
+            "maxItems": 2,
+            "minItems": 1
+        },
+        "rating": {
+            "type": "number"
+        },
+        "genres": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "rate_op": {
+            "type": "string",
+            "enum": [
+                "GT",
+                "LT",
+                "GTE",
+                "LTE",
+                "EQ"
+            ]
+        }
+    }
+}

@@ -11,7 +11,7 @@ class BaseController {
     }
 
     error(res, err) {
-        res.status(err)
+        res.status(err.status || STATUS.SERVER_ERROR)
             .header(HEADER.CONTENT_TYPE)
             .send(ErrorManger.get(error));
     }

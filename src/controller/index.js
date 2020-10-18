@@ -1,4 +1,6 @@
 'use strict';
+const STATUS = require('../constant/status.constant');
+const MovieController = require('./movie.controller');
 
 function proxy(obj) {
     let handler = {
@@ -14,5 +16,9 @@ function proxy(obj) {
 
 
 module.exports.defaultHandler = (req, res) => {
-    res.status()
+    res.status(STATUS.OK).send('Service under Construction ...');
 };
+
+module.exports.movieController = proxy(new MovieController());
+
+

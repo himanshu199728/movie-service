@@ -5,4 +5,5 @@ module.exports = {
     CLIENT_ERROR: 400,
     UNAUTHORIZED: 401,
     FORBIDDEN: 403,
+    NO_DATA_FOUND: 204
 };
