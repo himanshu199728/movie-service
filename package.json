@@ -21,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/himanshu199728/movie-service/issues"
   },
-  "homepage": "https://github.com/himanshu199728/movie-service#readme"
+  "homepage": "https://github.com/himanshu199728/movie-service#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "imdb-api": "^4.2.0",
+    "jsonschema": "^1.3.0",
+    "mongoose": "^5.10.9"
+  }
 }
