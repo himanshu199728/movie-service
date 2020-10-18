@@ -11,4 +11,10 @@ app.use(express.json());
 
 app.get('/movies/:title', movieController.findByTitle);
 app.get('/movies', movieController.find);
+app.put('/movies/:id', movieController.updateOne);
 app.get('/', defaultHandler);
+
+const PORT = process.env.PORT || 3600;
+app.listen(PORT, () => {
+    console.log(`Server running at ${PORT}`);
+})

@@ -18,6 +18,7 @@ class ErrorManager extends BaseManager {
 
         if (typeof msg == 'object' && Object.keys(msg).length > 0 && msg.name == "ValidationError") {
             result.errors = msg.errors;
+            return result;
         }
         return result;
     }

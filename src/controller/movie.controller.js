@@ -17,8 +17,19 @@ class MovieController extends BaseController {
     async find(req, res) {
         try {
             const movieManager = new MovieManager();
-            const queryParams = req.query;
-            const result = await movieManager.find(req);
+            req.query.year = req.query.year.split(',');
+            req.query.genres = req.query.genres.split(',');
+            const result = await movieManager.find(req.query);
+            super.ok(res, result);
+        } catch (err) {
+            super.error(res, err);
+        }
+    }
+
+    async updateOne(req, res) {
+        try {
+            const movieManager = new MovieManager();
+            const result = await movieManager.updateOne(req);
             super.ok(res, result);
         } catch (err) {
             super.error(res, err);
