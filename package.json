@@ -1,0 +1,25 @@
+{
+  "name": "movie-service",
+  "version": "1.0.0",
+  "description": "Service for movies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himanshu199728/movie-service.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "Express",
+    "GraphQL",
+    "MongoDB"
+  ],
+  "author": "Himanshu Joshi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/himanshu199728/movie-service/issues"
+  },
+  "homepage": "https://github.com/himanshu199728/movie-service#readme"
+}
