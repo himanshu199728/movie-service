@@ -100,10 +100,7 @@
    ```
      {
        "genres": <string[]>,
-       "rating": {
-         "operator": <string as enum["GT","LT","GTE","LTE","EQ"]>,
-         "value": <number>
-        }
+       "rating": number
       } 
    ```
 
