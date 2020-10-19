@@ -36,7 +36,7 @@ class MovieManager extends BaseManager {
 
             movieEntity = buildMovie(movieEntity);
             await Movies.create(movieEntity);
-            return movieEntity;
+            return { success: true, data: movieEntity };
         } catch (err) {
             throw err;
         }
