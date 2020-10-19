@@ -10,31 +10,35 @@
         },
         "year": {
             "type": "array",
-            "description": "Year in which launch",
             "items": {
-                "type": "string"
-            },
-            "maxItems": 2,
-            "minItems": 1
-        },
-        "rating": {
-            "type": "number"
-        },
-        "genres": {
-            "type": "array",
-            "items": {
-                "type": "string"
+                "type": "string",
+                "pattern": "^[1-2][0-9]{3}"
             }
-        },
-        "rate_op": {
-            "type": "string",
-            "enum": [
-                "GT",
-                "LT",
-                "GTE",
-                "LTE",
-                "EQ"
-            ]
+        }
+    },
+    "rating": {
+        "type": "object",
+        "description": "Year in which launch",
+        "properties": {
+            "operator": {
+                "type": "string",
+                "enum": [
+                    "GT",
+                    "LT",
+                    "GTE",
+                    "LTE",
+                    "EQ"
+                ]
+            },
+            "value": {
+                "type": "number"
+            }
+        }
+    },
+    "genres": {
+        "type": "array",
+        "items": {
+            "type": "string"
         }
     }
 }

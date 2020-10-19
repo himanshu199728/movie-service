@@ -10,7 +10,7 @@ const { defaultHandler, movieController } = require('./src/controller')
 app.use(express.json());
 
 app.get('/movies/:title', movieController.findByTitle);
-app.get('/movies', movieController.find);
+app.post('/movies', movieController.find);
 app.put('/movies/:id', movieController.updateOne);
 app.get('/', defaultHandler);
 
