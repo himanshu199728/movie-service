@@ -4,7 +4,8 @@
   "description": "Service for movies",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node src/test/*",
+    "code:run": "node index.js"
   },
   "repository": {
     "type": "git",
