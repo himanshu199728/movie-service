@@ -51,6 +51,19 @@
 
    > URL: ```{{movie_url}}/movies```
 
+   > Request Body: 
+
+   ```
+     {
+       "id": <string>,
+       "year": Array<String Date with pattern YYY>,
+       "genres": <string[]>,
+       "rating": {
+         "operator": <string as enum["GT","LT","GTE","LTE","EQ"]>,
+         "value": <number>
+        }
+      } 
+   ```
 
    > Success Response(200):
 
@@ -80,8 +93,19 @@
 
    > Method: PUT
 
-   > URL: ```{{movie_url}}/movies/:id```
+   > URL:  ```{{movie_url}}/movies/:id```
 
+   > Request Body: 
+
+   ```
+     {
+       "genres": <string[]>,
+       "rating": {
+         "operator": <string as enum["GT","LT","GTE","LTE","EQ"]>,
+         "value": <number>
+        }
+      } 
+   ```
 
    > Success Response(200):
 
