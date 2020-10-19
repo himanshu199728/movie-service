@@ -16,7 +16,7 @@ class BaseManager {
             };
         }
 
-        const schema = fs.readFileSync(process.pwd() + schemPath, { encoding: 'utf8' }).toString();
+        const schema = fs.readFileSync(process.cwd() + schemPath, { encoding: 'utf8' }).toString();
         const result = this.validator.validate(data, JSON.parse(schema));
         const err = this.formatError(result);
         return err;

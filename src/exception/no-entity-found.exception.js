@@ -5,7 +5,7 @@ class NoEntityFoundException extends Error {
 
     constructor(msg) {
         super(msg);
-        this.status = STATUS.NO_DATA_FOUND;
+        this.status = STATUS.NOT_FOUND;
     }
 
     getStatusCode() {

@@ -3,13 +3,16 @@
     "$id": "http://movie-search.com/content.json",
     "type": "object",
     "additionalProperties": false,
-    "rating": {
-        "type": "number"
-    },
-    "genres": {
-        "type": "array",
-        "items": {
-            "type": "string"
+    "required": [],
+    "properties": {
+        "rating": {
+            "type": "number"
+        },
+        "genres": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
         }
     }
 }

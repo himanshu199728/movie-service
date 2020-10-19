@@ -14,31 +14,31 @@
                 "type": "string",
                 "pattern": "^[1-2][0-9]{3}"
             }
-        }
-    },
-    "rating": {
-        "type": "object",
-        "description": "Year in which launch",
-        "properties": {
-            "operator": {
-                "type": "string",
-                "enum": [
-                    "GT",
-                    "LT",
-                    "GTE",
-                    "LTE",
-                    "EQ"
-                ]
-            },
-            "value": {
-                "type": "number"
+        },
+        "rating": {
+            "type": "object",
+            "description": "Year in which launch",
+            "properties": {
+                "operator": {
+                    "type": "string",
+                    "enum": [
+                        "GT",
+                        "LT",
+                        "GTE",
+                        "LTE",
+                        "EQ"
+                    ]
+                },
+                "value": {
+                    "type": "number"
+                }
             }
-        }
-    },
-    "genres": {
-        "type": "array",
-        "items": {
-            "type": "string"
+        },
+        "genres": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
         }
     }
 }

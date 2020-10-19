@@ -7,7 +7,7 @@ class MovieController extends BaseController {
     async findByTitle(req, res) {
         try {
             const movieManager = new MovieManager();
-            const result = await movieManager.findById(req);
+            const result = await movieManager.findByTitle(req);
             super.ok(res, result);
         } catch (err) {
             super.error(res, err);
