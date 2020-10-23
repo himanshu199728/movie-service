@@ -85,7 +85,7 @@ module.exports = MovieManager;
 
 function buildMovie(movie) {
     const movieEntity = {
-        release_year: movie, rating: 0.0,
+        release_year: 'None', rating: 0.0,
         genres: [], title: ''
     }
     if (!movie.id) {
